@@ -25,7 +25,7 @@ The framework is designed to create all the tables for you in your DB upon succe
 - [xgc tunerchip](https://github.com/VoXzE/xgc-tunerchip)
 
 #### Support / Issues / Feature Requests
-This project is in active development, I intend to cover major/minor bugs and also implement features I like the idea of. Any issues you find please report via GitHub's issue section. For support installing/using the framework please contact us on our support discord: https://discord.gg/CNg73Xh
+This project is in active development, I intend to cover major/minor bugs and also implement features I like the idea of. Any issues you find please report via GitHub's issue section. For support installing/using the framework please contact us on our support discord: <https://discord.gg/CNg73Xh>
 
 #### Requirements
 - x86-64 system running Linux or Windows (7/2008 R2+), decent upstream connection.
