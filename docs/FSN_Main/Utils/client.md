@@ -32,11 +32,10 @@ client_scripts {
 ### Util.Tick
 *A simple wrapper for CreateThread + while do*
 
-| What    | Follows  |
-| ------- | -------- |
-| A table | A header |
-| A table | A header |
-| A table | A header |
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `f`         | function | The function you wish to run |
+| `ms`        | number   | Number of milliseconds to wait at the beginning. Default to `0` |
 
 #### Example
 ```lua
