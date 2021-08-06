@@ -1,7 +1,7 @@
 # F.A.Q.
 
 ## Where is the SQL File?
-FSN on first launch as long as everything is connected properly and installed properly will AUTOMATICALLY create all the tables and columns you need in your database. On first run your server console will show the tables being made. It is recommened that after the first run you close the server and restart it. Just to make sure the tables have been created and you are connected to your database.
+FSN on first launch as long as everything is connected properly and installed properly will **AUTOMATICALLY** create all the tables and columns you need in your database. On first run your server console will show the tables being made. It is recommened that after the first run you close the server and restart it. Just to make sure the tables have been created and you are connected to your database.
 
 
 ## Stuck at the character Select Screen/ Black Screen on connection?
