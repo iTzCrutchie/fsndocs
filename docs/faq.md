@@ -1,3 +1,6 @@
+---
+sort: 2
+---
 # F.A.Q.
 
 ## Where is the SQL File?
