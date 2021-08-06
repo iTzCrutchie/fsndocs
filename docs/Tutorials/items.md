@@ -1,7 +1,7 @@
 ---
 sort: 1
 ---
-# Items
+# Items and Stores
 Items are stored in the `sv_presets.lua` to avoid database calls to things that are static. Items need to be added to the file following the same format of the other items. Item uses can be defined in a couple ways but the easiest is to add the use of the item to `cl_uses.lua`
 
 ## Adding an Item
