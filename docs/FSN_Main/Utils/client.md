@@ -128,16 +128,18 @@ end)
 ### Util.DrawText
 *Displays text on screen.*
 
-Argument | Type | Description
---- | --- | ---
-`text` | string | The text to display.
-`font` | number | Font to use, list: https://gtaforums.com/topic/794014-fonts-list/
-`center` | boolean | True/false align text center.
-`x` | number | Padding to left of screen.
-`y` | number | Padding to top of screen. 
-`scale` | number | Font size.
-`col` | Color of text.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `text`      | string   | The text to display. |
+| `font`      | number   | Font to use, [Font List](https://gtaforums.com/topic/794014-fonts-list/) |
+| `center`    | boolean  | True/false align text center. |
+| `x`         | number   | Padding to left of screen. |
+| `y`         | number   | Padding to top of screen. |
+| `scale`     | number   | Font size. |
+| `col`       | table    |Color of text in rgb format. |
+
 #### Example
+
 ```lua
 --[[
 	This example will display text on screen.
@@ -153,12 +155,12 @@ end)
 ### Util.DrawText3D
 *Displays text at a point in the world.*
 
-Argument | Type | Description
---- | --- | ---
-`x` | number | X position in the world.
-`y` | number | Y position in the world. 
-`z` | number | Z position in the world. 
-`text` | string | The text to display.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `x`         | number   | X position in the world. |
+| `y`         | number   | Y position in the world. |
+| `z`         | number   | Z position in the world. |
+| `text`      | string   | The text to display. |
 
 #### Example
 ```lua
@@ -177,9 +179,9 @@ end)
 ### Util.FormatMoneyString
 *Will return a formatted red or green string if the player can afford it.*
 
-Argument | Type | Description
---- | --- | ---
-`amt` | number | Money amount.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `amt`       | number   | Money amount. |
 
 #### Example
 ```lua
@@ -201,11 +203,12 @@ end)
 ### Util.GetPlayers
 *Returns a table of all the currently connected players.* 
 
+```note
+FiveM already includes a native for this and will work with OneSync with no changes. [GetPlayers Native](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/)
+```
 
- **NOTICE:** FiveM released a real version of this, list: https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/
-
-Argument | Type | Description
---- | --- | ---
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
 
 #### Example
 ```lua
@@ -227,17 +230,17 @@ end)
 ### Util.PrependTable
 *Add the value to position one of the original table and return it.* 
 
-Argument | Type | Description
---- | --- | ---
-`t` | table | Table to add the value to.
-`v` | * | The value to put into the table.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `t`         | table    | Table to add the value to. |
+| `v`         | *        | The value to put into the table. |
 
 #### Example
 ```lua
 local table = {1='one',2='two',3='three'}
 table = Util.PrependTable(table, 'value')
 
-orint(Util.PrintTable(table))
+print(Util.PrintTable(table))
 ``` 
 ```lua
 {1='value',2='one',3='two',4='three'}
@@ -248,9 +251,9 @@ orint(Util.PrintTable(table))
 ### Util.PrintTable
 *Return a formatted string of the table.* 
 
-Argument | Type | Description
---- | --- | ---
-`t` | table | Table to format into string.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `t`         | table    | Table to format into string. |
 
 #### Example
 ```lua
@@ -263,10 +266,11 @@ print(Util.PrintTable(table))
 ### Util.TableHasValue
 *Returns true if the table includes any value matching element.* 
 
-Argument | Type | Description
---- | --- | ---
-`table` | table | Table to search.
-`element` | * | The vale to search for.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `table`     | table    | Table to search. |
+| `element`   | *        | The vale to search for. |
+
 #### Example
 ```lua
 local t = {1='one',2='two',3='three'}
@@ -285,13 +289,14 @@ nothing
 ### Util.GetVecDist
 *Gets the vector distance between two entities.* 
 
-Argument | Type | Description
---- | --- | ---
-`v1` | vector3 | Vector to compare against.
-`v2` | vector3 | Vector to compare against.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `v1`        | vector3  | Vector to compare against. |
+| `v2`        | vector3  | Vector to compare against. |
+
 #### Example
 ```lua
-if Util.GetVecDist(GetEntityCoords(GetPlayerPed(-1)), GetEntityCoords(vehicle)) then
+if Util.GetVecDist(GetEntityCoords(PlayerPedId()), GetEntityCoords(vehicle)) then
 	print('is nearby')
 end
 ``` 
@@ -302,12 +307,13 @@ is nearby
 	// This function is not available in javascript.
 ```
 ### Util.PositionCheck
-*Not really sure what this does...* 
+*Checks and compares your distance to an object's distance while you are close to said object* 
 
-Argument | Type | Description
---- | --- | ---
-`playerPos` | vector3 | GetEntityCoords(GetPlayerPed(-1)).
-`xyz` | vector3 | Vector to compare against.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `playerPos` | vector3  | GetEntityCoords(PlayerPedId()). |
+| `xyz`       | vector3  | Vector to compare against. |
+
 #### Example
 ```lua
 	-- not sure how to use this
@@ -318,8 +324,9 @@ Argument | Type | Description
 ### Util.GetClosestPlayer
 *Stolen from Frazzle in #scripting-gated, returns the closest player + how far away they are.* 
 
-Argument | Type | Description
---- | --- | ---
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+
 #### Example
 ```lua
 Util.Tick(function()
@@ -336,9 +343,10 @@ end)
 ### Util.LoadAnimDict
 *Simple one liner to load an anim dictionary.* 
 
-| Argument | Type | Description
-| --- | --- | ---
-`dict` | string | The anim dictionary to load.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `dict`      | string   | The anim dictionary to load. |
+
 #### Example
 ```lua
 --[[
@@ -359,9 +367,10 @@ end, 10)
 ### Util.MakeString
 *Make a randomly generated string* 
 
-Argument | Type | Description
---- | --- | ---
-`length` | number | Number of characters to create string.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `length`    | number   | Number of characters to create string. |
+
 #### Example
 ```lua
 ['WEAPON_STUNGUN'] = {
@@ -383,9 +392,10 @@ Argument | Type | Description
 ### Util.GetKeyNumber
 *Stop the horrendous replication of the massive KEYS table, this just does that but better.* 
 
-Argument | Type | Description
---- | --- | ---
-`key` | string | Which key to retur the number of.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `key`       | string   | Which key to retur the number of. |
+
 #### Example
 ```lua
 --[[
