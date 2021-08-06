@@ -44,7 +44,7 @@ client_scripts {
 ]]--
 
 Util.Tick(function()
-	local loc = GetEntityCoords(GetPlayerPed(-1))
+	local loc = GetEntityCoords(PlayerPedId())
 	Util.DrawText3D(loc.x, loc.y, loc.z, 'Example text')
 end) 
 ``` 
@@ -69,8 +69,8 @@ end)
 Util.Repeat(function() 
 	Util.LoadAnimDict('amb@code_human_in_car_mp_actions@drink@std@rps@base')
 
-	if not IsEntityPlayingAnim(GetPlayerPed(-1), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 3) then
-		TaskPlayAnim(GetPlayerPed(-1), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 8.0, 1.0, -1, 16, 0, 0, 0, 0)
+	if not IsEntityPlayingAnim(PlayerPedId(), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 3) then
+		TaskPlayAnim(PlayerPedId(), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 8.0, 1.0, -1, 16, 0, 0, 0, 0)
 	end
 end, 10)
 ``` 
@@ -169,7 +169,7 @@ end)
 ]]--
 
 Util.Tick(function()
-	local loc = GetEntityCoords(GetPlayerPed(-1))
+	local loc = GetEntityCoords(PlayerPedId())
 	Util.DrawText3D(loc.x, loc.y, loc.z, 'Example text')
 end) 
 ``` 
@@ -190,7 +190,7 @@ end)
 ]]--
 
 Util.Tick(function()
-	local loc = GetEntityCoords(GetPlayerPed(-1))
+	local loc = GetEntityCoords(PlayerPedId())
 	Util.DrawText3D(loc.x, loc.y, loc.z, '[E] Clothing Store ('..Util.FormatMoneyString(500)..')')
 	if IsControlJustPressed(0, Util.GetKeyNumber('E')) then
 		-- enter clothes store
@@ -218,7 +218,7 @@ FiveM already includes a native for this and will work with OneSync with no chan
 
 Util.Tick(function()
 	for _, player in pairs(Util.GetPlayers()) do
-		if Util.GetVecDist(GetEntityCoords(GetPlayerPed(player)),GetEntityCoords(GetPlayerPed(-1))) < 5 then
+		if Util.GetVecDist(GetEntityCoords(GetPlayerPed(player)),GetEntityCoords(PlayerPedId())) < 5 then
 			-- player is close
 		end
 	end
@@ -356,8 +356,8 @@ end)
 Util.Repeat(function() 
 	Util.LoadAnimDict('amb@code_human_in_car_mp_actions@drink@std@rps@base')
 
-	if not IsEntityPlayingAnim(GetPlayerPed(-1), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 3) then
-		TaskPlayAnim(GetPlayerPed(-1), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 8.0, 1.0, -1, 16, 0, 0, 0, 0)
+	if not IsEntityPlayingAnim(PlayerPedId(), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 3) then
+		TaskPlayAnim(PlayerPedId(), 'amb@code_human_in_car_mp_actions@drink@std@rps@base', 'idle_a', 8.0, 1.0, -1, 16, 0, 0, 0, 0)
 	end
 end, 10)
 ``` 
@@ -403,7 +403,7 @@ end, 10)
 ]]--
 
 Util.Tick(function()
-	local loc = GetEntityCoords(GetPlayerPed(-1))
+	local loc = GetEntityCoords(PlayerPedId())
 	Util.DrawText3D(loc.x, loc.y, loc.z, '[E] Clothing Store ('..Util.FormatMoneyString(500)..')')
 	if IsControlJustPressed(0, Util.GetKeyNumber('E')) then
 		-- enter clothes store
