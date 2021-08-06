@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# Server Utils
+# Server Utils Setup
 These are all the utils, their functions and how to use them for server side files on your server. Be sure to include `server_script '@fsn_main/sv_utils.lua'` in your fxmanifest.lua for your resource in order to utilise these utils on your server scripts.
 
 Example of a fxmanifest with the server utils defined:
