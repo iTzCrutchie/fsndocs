@@ -1,3 +1,0 @@
-# Utils
-
-source: `{{ page.path }}`

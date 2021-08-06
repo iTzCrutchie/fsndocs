@@ -1,3 +1,0 @@
-# Client
-
-source: `{{ page.path }}`
