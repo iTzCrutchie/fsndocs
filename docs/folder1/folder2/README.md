@@ -1,3 +1,3 @@
-# I'm folder2
+# Utils
 
 source: `{{ page.path }}`
