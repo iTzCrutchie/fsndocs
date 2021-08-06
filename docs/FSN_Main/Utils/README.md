@@ -4,4 +4,4 @@ sort: 1
 
 # Utils
 
-source: `{{ page.path }}`
+{% include list.liquid all=true %}

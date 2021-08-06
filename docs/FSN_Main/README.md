@@ -4,4 +4,4 @@ sort: 1
 
 # FSN_Main
 
-{% include list.liquid %}
+{% include list.liquid all=true %}
