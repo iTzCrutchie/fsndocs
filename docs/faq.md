@@ -18,16 +18,16 @@ You probably did not install mythic_notify. Check your client console logs and t
 You probably changed the folder structure of the resources and how they are installed. The phone script needs to point to the correct folder in order to save texts, contacts, etc to a datastore folder. If you installed your resources like so /resources/[fsn]/allyourfsnresources then you will need to change [line](https://github.com/jamessc0tt/FiveM-FSN-Framework/blob/master/fsn_phones/sv_phone.lua#L2)
 
 From
-` 'resources/'..GetCurrentResourceName()..'/datastore/' `
+`'resources/'..GetCurrentResourceName()..'/datastore/'`
 
 To
-` 'resources/[fsn]/'..GetCurrentResourceName()..'/datastore/' `
+`'resources/[fsn]/'..GetCurrentResourceName()..'/datastore/'`
 
  You will also need to do this for the evidence locker on this [line](https://github.com/JamesSc0tt/FiveM-FSN-Framework/blob/master/fsn_inventory/pd_locker/sv_locker.lua#L2)
 
 # Known Bugs/Issues
 You can check the latest issues and bugs on the github under [issues](https://github.com/JamesSc0tt/FiveM-FSN-Framework/issues) This list MAY NOT be up to date with the latest issues and bugs
 
-..* Clothing menu breaks on texture change
+* Clothing menu breaks on texture change
 
-..* Facial features do not save
+* Facial features do not save
