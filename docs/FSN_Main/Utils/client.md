@@ -106,10 +106,11 @@ end)
 ### Util.SpawnVehicle
 *Spawns a vehicle where specified.*
 
-Argument | Type | Description
---- | --- | ---
-`hash` | string | GTA Hash of the vehicle you wish to spawn.
-`xyzh` | table | Coordinates to spawn vehicle at.
+| Argument    | Type     | Description |
+| -------     | -------- | ----------- |
+| `hash`      | string   | GTA Hash of the vehicle you wish to spawn. |
+| `xyzh`      | table    | Coordinates to spawn vehicle at. |
+
 #### Example
 ```lua
 --[[
@@ -335,8 +336,8 @@ end)
 ### Util.LoadAnimDict
 *Simple one liner to load an anim dictionary.* 
 
-Argument | Type | Description
---- | --- | ---
+| Argument | Type | Description
+| --- | --- | ---
 `dict` | string | The anim dictionary to load.
 #### Example
 ```lua
