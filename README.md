@@ -21,6 +21,7 @@ The framework is designed to create all the tables for you in your DB upon succe
 - [tokovoip](https://github.com/Itokoyamato/TokoVOIP_TS3/releases)
 - [interactsound](https://github.com/plunkettscott/interact-sound)
 - [mhacking](https://github.com/GHMatti/FiveM-Scripts/tree/master/mhacking)
+
 #### Optional - These resources are optional but might make a few fsn resources seem broken or not work. If you don't install these it is up to you to find the resources and replace the event triggers to whatever resource you prefer.
 - [K9](https://github.com/xander1998/k9)
 - [Luxart Vehicle Control](https://forum.cfx.re/t/release-luxart-vehicle-control/17304)
