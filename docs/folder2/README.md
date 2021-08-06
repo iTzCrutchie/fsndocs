@@ -1,3 +1,3 @@
-# I'm folder2
+# FSN_Inventory
 
 source: `{{ page.path }}`
