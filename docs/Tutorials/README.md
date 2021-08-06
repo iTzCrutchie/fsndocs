@@ -2,6 +2,6 @@
 sort: 2
 ---
 
-# FSN_Inventory
+# Tutorials
 
 {% include list.liquid all=true %}
